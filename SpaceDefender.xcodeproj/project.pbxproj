@@ -7,26 +7,57 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB499E8685F6628BE05F94EF /* Pods_SpaceDefender.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 956774F6EC34DF30C7256E82 /* Pods_SpaceDefender.framework */; };
 		FD190A3D2A790D2800F12C31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD190A3C2A790D2800F12C31 /* AppDelegate.swift */; };
-		FD190A3F2A790D2800F12C31 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = FD190A3E2A790D2800F12C31 /* GameScene.sks */; };
-		FD190A412A790D2800F12C31 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = FD190A402A790D2800F12C31 /* Actions.sks */; };
 		FD190A432A790D2800F12C31 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD190A422A790D2800F12C31 /* GameScene.swift */; };
 		FD190A452A790D2800F12C31 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD190A442A790D2800F12C31 /* GameViewController.swift */; };
-		FD190A482A790D2800F12C31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD190A462A790D2800F12C31 /* Main.storyboard */; };
 		FD190A4A2A790D2900F12C31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD190A492A790D2900F12C31 /* Assets.xcassets */; };
 		FD190A4D2A790D2900F12C31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD190A4B2A790D2900F12C31 /* LaunchScreen.storyboard */; };
+		FD190A562A811BA000F12C31 /* ExplosionParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = FD190A552A811BA000F12C31 /* ExplosionParticle.sks */; };
+		FD190A7A2A8D100600F12C31 /* EnemySpaceshipNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD190A792A8D100600F12C31 /* EnemySpaceshipNode.swift */; };
+		FD190A822A8DF70F00F12C31 /* GameUIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD190A812A8DF70F00F12C31 /* GameUIConstants.swift */; };
+		FD190A872A90A7E200F12C31 /* MenuScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD190A862A90A7E200F12C31 /* MenuScreenViewController.swift */; };
+		FD190A892A90A86900F12C31 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD190A882A90A86900F12C31 /* UIView+Extension.swift */; };
+		FD190A902A90AE5A00F12C31 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD190A8F2A90AE5A00F12C31 /* UserDefaultsManager.swift */; };
+		FD190A922A90AF7100F12C31 /* ScoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD190A912A90AF7100F12C31 /* ScoreModel.swift */; };
+		FD190A942A90B35100F12C31 /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD190A932A90B35100F12C31 /* UserDefaults+Extension.swift */; };
+		FD190A962A90C9D800F12C31 /* SettingsScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD190A952A90C9D800F12C31 /* SettingsScreenViewController.swift */; };
+		FD190A9A2A9226D200F12C31 /* ScoresScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD190A992A9226D200F12C31 /* ScoresScreenViewController.swift */; };
+		FD190A9C2A923E9A00F12C31 /* ScoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD190A9B2A923E9A00F12C31 /* ScoreTableViewCell.swift */; };
+		FD190A9E2A9522EF00F12C31 /* GameTextureConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD190A9D2A9522EF00F12C31 /* GameTextureConstants.swift */; };
+		FD190AA02A95238100F12C31 /* GameLogicConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD190A9F2A95238100F12C31 /* GameLogicConstants.swift */; };
+		FD190AA32A96028C00F12C31 /* HeroSpaceshipNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD190AA22A96028C00F12C31 /* HeroSpaceshipNode.swift */; };
+		FD190AA52A96316400F12C31 /* AsteroidNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD190AA42A96316400F12C31 /* AsteroidNode.swift */; };
+		FD190AA72A9654E200F12C31 /* SKSpriteNode+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD190AA62A9654E200F12C31 /* SKSpriteNode+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9043C94FED86D197F11451B7 /* Pods-SpaceDefender.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceDefender.debug.xcconfig"; path = "Target Support Files/Pods-SpaceDefender/Pods-SpaceDefender.debug.xcconfig"; sourceTree = "<group>"; };
+		956774F6EC34DF30C7256E82 /* Pods_SpaceDefender.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpaceDefender.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF85EDD481BBF55C04D5E919 /* Pods-SpaceDefender.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceDefender.release.xcconfig"; path = "Target Support Files/Pods-SpaceDefender/Pods-SpaceDefender.release.xcconfig"; sourceTree = "<group>"; };
 		FD190A392A790D2800F12C31 /* SpaceDefender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceDefender.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD190A3C2A790D2800F12C31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FD190A3E2A790D2800F12C31 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		FD190A402A790D2800F12C31 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		FD190A422A790D2800F12C31 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		FD190A442A790D2800F12C31 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
-		FD190A472A790D2800F12C31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FD190A492A790D2900F12C31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD190A4C2A790D2900F12C31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FD190A552A811BA000F12C31 /* ExplosionParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = ExplosionParticle.sks; sourceTree = "<group>"; };
+		FD190A792A8D100600F12C31 /* EnemySpaceshipNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnemySpaceshipNode.swift; sourceTree = "<group>"; };
+		FD190A812A8DF70F00F12C31 /* GameUIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameUIConstants.swift; sourceTree = "<group>"; };
+		FD190A862A90A7E200F12C31 /* MenuScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuScreenViewController.swift; sourceTree = "<group>"; };
+		FD190A882A90A86900F12C31 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		FD190A8F2A90AE5A00F12C31 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		FD190A912A90AF7100F12C31 /* ScoreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreModel.swift; sourceTree = "<group>"; };
+		FD190A932A90B35100F12C31 /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
+		FD190A952A90C9D800F12C31 /* SettingsScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreenViewController.swift; sourceTree = "<group>"; };
+		FD190A972A90DA1F00F12C31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FD190A992A9226D200F12C31 /* ScoresScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoresScreenViewController.swift; sourceTree = "<group>"; };
+		FD190A9B2A923E9A00F12C31 /* ScoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreTableViewCell.swift; sourceTree = "<group>"; };
+		FD190A9D2A9522EF00F12C31 /* GameTextureConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTextureConstants.swift; sourceTree = "<group>"; };
+		FD190A9F2A95238100F12C31 /* GameLogicConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameLogicConstants.swift; sourceTree = "<group>"; };
+		FD190AA22A96028C00F12C31 /* HeroSpaceshipNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroSpaceshipNode.swift; sourceTree = "<group>"; };
+		FD190AA42A96316400F12C31 /* AsteroidNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsteroidNode.swift; sourceTree = "<group>"; };
+		FD190AA62A9654E200F12C31 /* SKSpriteNode+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SKSpriteNode+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,17 +65,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB499E8685F6628BE05F94EF /* Pods_SpaceDefender.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D05340F64E75C0B246D8E52 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				956774F6EC34DF30C7256E82 /* Pods_SpaceDefender.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8FCF5BA7B34868388CF2E538 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9043C94FED86D197F11451B7 /* Pods-SpaceDefender.debug.xcconfig */,
+				DF85EDD481BBF55C04D5E919 /* Pods-SpaceDefender.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		FD190A302A790D2800F12C31 = {
 			isa = PBXGroup;
 			children = (
 				FD190A3B2A790D2800F12C31 /* SpaceDefender */,
 				FD190A3A2A790D2800F12C31 /* Products */,
+				8FCF5BA7B34868388CF2E538 /* Pods */,
+				1D05340F64E75C0B246D8E52 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,15 +111,85 @@
 			isa = PBXGroup;
 			children = (
 				FD190A3C2A790D2800F12C31 /* AppDelegate.swift */,
-				FD190A3E2A790D2800F12C31 /* GameScene.sks */,
-				FD190A402A790D2800F12C31 /* Actions.sks */,
-				FD190A422A790D2800F12C31 /* GameScene.swift */,
-				FD190A442A790D2800F12C31 /* GameViewController.swift */,
-				FD190A462A790D2800F12C31 /* Main.storyboard */,
+				FD190A852A90A75A00F12C31 /* MenuScreen */,
+				FD190A8C2A90AC4300F12C31 /* ScoresScreen */,
+				FD190A8B2A90AC3400F12C31 /* GameScreen */,
+				FD190A8A2A90AC1F00F12C31 /* SettingsScreen */,
+				FD190A8D2A90AC6C00F12C31 /* Extensions */,
+				FD190A8E2A90AE3400F12C31 /* Services */,
 				FD190A492A790D2900F12C31 /* Assets.xcassets */,
 				FD190A4B2A790D2900F12C31 /* LaunchScreen.storyboard */,
+				FD190A912A90AF7100F12C31 /* ScoreModel.swift */,
+				FD190A972A90DA1F00F12C31 /* Info.plist */,
 			);
 			path = SpaceDefender;
+			sourceTree = "<group>";
+		};
+		FD190A852A90A75A00F12C31 /* MenuScreen */ = {
+			isa = PBXGroup;
+			children = (
+				FD190A862A90A7E200F12C31 /* MenuScreenViewController.swift */,
+			);
+			path = MenuScreen;
+			sourceTree = "<group>";
+		};
+		FD190A8A2A90AC1F00F12C31 /* SettingsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				FD190A952A90C9D800F12C31 /* SettingsScreenViewController.swift */,
+			);
+			path = SettingsScreen;
+			sourceTree = "<group>";
+		};
+		FD190A8B2A90AC3400F12C31 /* GameScreen */ = {
+			isa = PBXGroup;
+			children = (
+				FD190A442A790D2800F12C31 /* GameViewController.swift */,
+				FD190AA12A96025700F12C31 /* Nodes */,
+				FD190A552A811BA000F12C31 /* ExplosionParticle.sks */,
+				FD190A422A790D2800F12C31 /* GameScene.swift */,
+				FD190A9F2A95238100F12C31 /* GameLogicConstants.swift */,
+				FD190A812A8DF70F00F12C31 /* GameUIConstants.swift */,
+				FD190A9D2A9522EF00F12C31 /* GameTextureConstants.swift */,
+			);
+			path = GameScreen;
+			sourceTree = "<group>";
+		};
+		FD190A8C2A90AC4300F12C31 /* ScoresScreen */ = {
+			isa = PBXGroup;
+			children = (
+				FD190A992A9226D200F12C31 /* ScoresScreenViewController.swift */,
+				FD190A9B2A923E9A00F12C31 /* ScoreTableViewCell.swift */,
+			);
+			path = ScoresScreen;
+			sourceTree = "<group>";
+		};
+		FD190A8D2A90AC6C00F12C31 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FD190A882A90A86900F12C31 /* UIView+Extension.swift */,
+				FD190A932A90B35100F12C31 /* UserDefaults+Extension.swift */,
+				FD190AA62A9654E200F12C31 /* SKSpriteNode+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FD190A8E2A90AE3400F12C31 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FD190A8F2A90AE5A00F12C31 /* UserDefaultsManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FD190AA12A96025700F12C31 /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				FD190AA22A96028C00F12C31 /* HeroSpaceshipNode.swift */,
+				FD190A792A8D100600F12C31 /* EnemySpaceshipNode.swift */,
+				FD190AA42A96316400F12C31 /* AsteroidNode.swift */,
+			);
+			path = Nodes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,9 +199,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FD190A502A790D2900F12C31 /* Build configuration list for PBXNativeTarget "SpaceDefender" */;
 			buildPhases = (
+				FE253AF8E914366C0BE8FF63 /* [CP] Check Pods Manifest.lock */,
 				FD190A352A790D2800F12C31 /* Sources */,
 				FD190A362A790D2800F12C31 /* Frameworks */,
 				FD190A372A790D2800F12C31 /* Resources */,
+				CB28B01BFB3AAE97C69CAB13 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,38 +252,85 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD190A482A790D2800F12C31 /* Main.storyboard in Resources */,
-				FD190A3F2A790D2800F12C31 /* GameScene.sks in Resources */,
+				FD190A562A811BA000F12C31 /* ExplosionParticle.sks in Resources */,
 				FD190A4A2A790D2900F12C31 /* Assets.xcassets in Resources */,
 				FD190A4D2A790D2900F12C31 /* LaunchScreen.storyboard in Resources */,
-				FD190A412A790D2800F12C31 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CB28B01BFB3AAE97C69CAB13 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpaceDefender/Pods-SpaceDefender-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpaceDefender/Pods-SpaceDefender-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SpaceDefender/Pods-SpaceDefender-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE253AF8E914366C0BE8FF63 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpaceDefender-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FD190A352A790D2800F12C31 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD190A7A2A8D100600F12C31 /* EnemySpaceshipNode.swift in Sources */,
+				FD190A892A90A86900F12C31 /* UIView+Extension.swift in Sources */,
+				FD190A962A90C9D800F12C31 /* SettingsScreenViewController.swift in Sources */,
+				FD190AA72A9654E200F12C31 /* SKSpriteNode+Extension.swift in Sources */,
+				FD190A9E2A9522EF00F12C31 /* GameTextureConstants.swift in Sources */,
+				FD190AA02A95238100F12C31 /* GameLogicConstants.swift in Sources */,
+				FD190A822A8DF70F00F12C31 /* GameUIConstants.swift in Sources */,
+				FD190AA52A96316400F12C31 /* AsteroidNode.swift in Sources */,
 				FD190A432A790D2800F12C31 /* GameScene.swift in Sources */,
 				FD190A452A790D2800F12C31 /* GameViewController.swift in Sources */,
 				FD190A3D2A790D2800F12C31 /* AppDelegate.swift in Sources */,
+				FD190A922A90AF7100F12C31 /* ScoreModel.swift in Sources */,
+				FD190A902A90AE5A00F12C31 /* UserDefaultsManager.swift in Sources */,
+				FD190A942A90B35100F12C31 /* UserDefaults+Extension.swift in Sources */,
+				FD190AA32A96028C00F12C31 /* HeroSpaceshipNode.swift in Sources */,
+				FD190A9C2A923E9A00F12C31 /* ScoreTableViewCell.swift in Sources */,
+				FD190A9A2A9226D200F12C31 /* ScoresScreenViewController.swift in Sources */,
+				FD190A872A90A7E200F12C31 /* MenuScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FD190A462A790D2800F12C31 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FD190A472A790D2800F12C31 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FD190A4B2A790D2900F12C31 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -222,7 +392,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -276,7 +446,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -288,18 +458,21 @@
 		};
 		FD190A512A790D2900F12C31 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9043C94FED86D197F11451B7 /* Pods-SpaceDefender.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ADKHC9M6Y8;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SpaceDefender/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,26 +480,32 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = niyaz.SpaceDefender;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		FD190A522A790D2900F12C31 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF85EDD481BBF55C04D5E919 /* Pods-SpaceDefender.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ADKHC9M6Y8;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SpaceDefender/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -334,9 +513,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = niyaz.SpaceDefender;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

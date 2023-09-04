@@ -77,8 +77,9 @@ final class GameScene: SKScene {
 
         scoreLabel.position = CGPoint(
             x: frame.maxX - scoreLabel.calculateAccumulatedFrame().width,
-            y: frame.maxY - scoreLabel.calculateAccumulatedFrame().height
+            y: frame.maxY - scoreLabel.calculateAccumulatedFrame().height - GameUIConstants.scoreInset
         )
+        scoreLabel.zPosition = 50
         addChild(scoreLabel)
 
         let heroPosition = CGPoint(

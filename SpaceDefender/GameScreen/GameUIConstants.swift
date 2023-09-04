@@ -5,7 +5,7 @@
 //  Created by Нияз Нуруллин on 17.08.2023.
 //
 
-import Foundation
+import UIKit
 
 enum GameUIConstants {
 
@@ -42,5 +42,10 @@ enum GameUIConstants {
         width: 3,
         height: 10
     )
+
+    static var scoreInset: CGFloat {
+        let window = UIApplication.shared.windows.first
+        return window?.safeAreaInsets.top ?? 0
+    }
 
 }

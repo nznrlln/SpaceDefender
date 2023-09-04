@@ -81,7 +81,8 @@ class ScoresScreenViewController: UIViewController {
 extension ScoresScreenViewController: UITableViewDataSource {
 
     func numberOfSections(in tableView: UITableView) -> Int {
-        UserDefaultsManager.shared.scores.count
+        print(UserDefaultsManager.shared.scores.count)
+        return UserDefaultsManager.shared.scores.count
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

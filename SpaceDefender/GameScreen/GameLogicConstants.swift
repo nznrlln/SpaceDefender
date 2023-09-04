@@ -42,4 +42,8 @@ enum GameLogicConstants {
     static let enemyBulletName = "EnemyBullet"
     static let enemyBulletsPerSecond: Double = 0.5
     static let enemyBulletBaseSpeed: CGFloat = -300
+
+    // points
+    static let pointsPerAsteroid: UInt = 1
+    static let pointsPerEnemy: UInt = 2
 }

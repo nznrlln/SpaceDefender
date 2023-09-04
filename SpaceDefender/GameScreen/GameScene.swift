@@ -172,7 +172,7 @@ final class GameScene: SKScene {
         enumerateChildNodes(withName: GameLogicConstants.asteroidName) { [weak self] asteroid, stop in
             if asteroid.frame.maxY < self?.frame.minY ?? 0 {
                 asteroid.removeFromParent()
-                self?.score += 1
+                self?.score += GameLogicConstants.pointsPerAsteroid
                 self?.updateScore()
             }
         }
@@ -279,20 +279,18 @@ final class GameScene: SKScene {
         explosion(pos: position)
         enemy.run(SKAction.fadeOut(withDuration: 0.3))
         enemy.removeFromParent()
-        score += 2
+        score += GameLogicConstants.pointsPerEnemy
         updateScore()
     }
 
     private func gameOver() {
-        if self.score > 0 {
-
+        explosion(pos: heroSpaceship.position)
+        self.heroSpaceship.run(SKAction.fadeOut(withDuration: 0.3)) { [weak self] in
+            guard let self = self else { return }
+            self.view?.isPaused = true
         }
         gameDelegate?.gameDidEnd(with: score)
 
-        explosion(pos: heroSpaceship.position)
-        self.heroSpaceship.run(SKAction.fadeOut(withDuration: 0.3)) {
-
-        }
         self.score = 0
         updateScore()
 

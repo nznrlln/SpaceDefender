@@ -15,6 +15,26 @@ class GameViewController: UIViewController {
         super.viewDidLoad()
 
         self.navigationController?.navigationBar.isHidden = true
+        startGame()
+    }
+
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        if UIDevice.current.userInterfaceIdiom == .phone {
+            return .portrait
+        } else {
+            return .all
+        }
+    }
+
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+
+    deinit {
+        debugPrint("GameVC deinit")
+    }
+
+    private func startGame() {
         /// Т.к. storyboard не существует - надо создать skView
         let skView = SKView(frame: view.frame)
         view = skView
@@ -35,32 +55,31 @@ class GameViewController: UIViewController {
             // Present the scene
             view.presentScene(scene)
         }
-
-    }
-
-    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-        if UIDevice.current.userInterfaceIdiom == .phone {
-            return .portrait
-        } else {
-            return .all
-        }
-    }
-
-    override var prefersStatusBarHidden: Bool {
-        return true
     }
 }
 
 extension GameViewController: GameSceneDelegate {
     func gameDidEnd(with score: UInt) {
-        let score = ScoreModel(
-            spaceshipModel: UserDefaultsManager.shared.currentSpaceshipModel,
-            userNickname: UserDefaultsManager.shared.currentUserNickname,
-            userScore: score
-        )
-        UserDefaultsManager.shared.scores.append(score)
 
-        navigationController?.popToRootViewController(animated: true)
+        if score > 1 {
+            let nick = UserDefaultsManager.shared.currentUserNickname
+            let scoreNick = (nick.trimmingCharacters(in: .whitespacesAndNewlines) != "") ? nick : "no name"
+            let scoreModel = ScoreModel(
+                spaceshipModel: UserDefaultsManager.shared.currentSpaceshipModel,
+                userNickname: scoreNick,
+                userScore: score
+            )
+            UserDefaultsManager.shared.scores.append(scoreModel)
+        }
+
+       let alert = AlertHelper.showGameOverAlert(score: "Score: \(score)") {
+            self.startGame()
+        } menuCompletion: {
+            self.navigationController?.popToRootViewController(animated: true)
+        }
+
+        self.present(alert, animated: true)
+
     }
     
 }

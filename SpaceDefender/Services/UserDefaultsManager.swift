@@ -24,6 +24,8 @@ final class UserDefaultsManager {
     /// Синглтон
     static let shared = UserDefaultsManager()
 
+    private let userDefaults = UserDefaults.standard
+
     /// Текущая модель корабля
     var currentSpaceshipModel: String {
         get {
@@ -37,12 +39,13 @@ final class UserDefaultsManager {
     /// Имя текущего игрока
     var currentUserNickname: String {
         get {
-            userDefaults.value(forKey: UserDefaultsKeys.currentUserNickname.rawValue) as? String ?? "no name"
+            userDefaults.value(forKey: UserDefaultsKeys.currentUserNickname.rawValue) as? String ?? ""
         }
         set {
             userDefaults.set(newValue, forKey: UserDefaultsKeys.currentUserNickname.rawValue)
         }
     }
+
     /// Текущая скорость игры
     var currentGameSpeed: Float {
         get {
@@ -65,22 +68,7 @@ final class UserDefaultsManager {
         }
     }
 
-    private let userDefaults = UserDefaults.standard
-//    private let encoder = JSONEncoder()
-//    private let decoder = JSONDecoder()
 
     private init() {}
-//        self.scores = getScores() ?? []
-//    }
-    
-//
-//    private func saveScores() {
-//        userDefaults.set(encodable: scores, forKey: UserDefaultsKeys.scores.rawValue)
-//    }
-//
-//    private func getScores() -> [ScoreModel]? {
-//        userDefaults.value([ScoreModel].self, forKey: UserDefaultsKeys.scores.rawValue)
-//    }
-
 
 }

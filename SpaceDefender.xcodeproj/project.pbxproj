@@ -29,6 +29,7 @@
 		FD190AA32A96028C00F12C31 /* HeroSpaceshipNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD190AA22A96028C00F12C31 /* HeroSpaceshipNode.swift */; };
 		FD190AA52A96316400F12C31 /* AsteroidNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD190AA42A96316400F12C31 /* AsteroidNode.swift */; };
 		FD190AA72A9654E200F12C31 /* SKSpriteNode+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD190AA62A9654E200F12C31 /* SKSpriteNode+Extension.swift */; };
+		FDDD26562AA5B14000092D6A /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDD26552AA5B14000092D6A /* AlertHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		FD190AA22A96028C00F12C31 /* HeroSpaceshipNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroSpaceshipNode.swift; sourceTree = "<group>"; };
 		FD190AA42A96316400F12C31 /* AsteroidNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsteroidNode.swift; sourceTree = "<group>"; };
 		FD190AA62A9654E200F12C31 /* SKSpriteNode+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SKSpriteNode+Extension.swift"; sourceTree = "<group>"; };
+		FDDD26552AA5B14000092D6A /* AlertHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				FD190A8F2A90AE5A00F12C31 /* UserDefaultsManager.swift */,
+				FDDD26552AA5B14000092D6A /* AlertHelper.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -316,6 +319,7 @@
 				FD190A822A8DF70F00F12C31 /* GameUIConstants.swift in Sources */,
 				FD190AA52A96316400F12C31 /* AsteroidNode.swift in Sources */,
 				FD190A432A790D2800F12C31 /* GameScene.swift in Sources */,
+				FDDD26562AA5B14000092D6A /* AlertHelper.swift in Sources */,
 				FD190A452A790D2800F12C31 /* GameViewController.swift in Sources */,
 				FD190A3D2A790D2800F12C31 /* AppDelegate.swift in Sources */,
 				FD190A922A90AF7100F12C31 /* ScoreModel.swift in Sources */,
